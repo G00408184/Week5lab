@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class BlockingController {
     private final BlockingService blockingService;
 
-    public BlockingService getBlockingService() {
+    public BlockingController(BlockingService blockingService) {
         this.blockingService = blockingService;
     }
 
